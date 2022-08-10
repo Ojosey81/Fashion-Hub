@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <div class="container">
+                <div>
+                    <h1 class="logo"><a href="index.html">FASHION HUB</a></h1>
+                </div>
+                <div>
+                    <ul class="navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contac Me</a></li>
+                        <li><a class="current" href="registration.html">Register</a></li>
+                        <li><a href="login.html">LogIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="form">
+        <div id="container-1">
+            <div class="form-wrap">
+              <h1>Registration Form </h1>
+              <p>Proceed</p>
+              <form>
+                <div class="form-group">
+                  <label for="Name">First Name</label>
+                  <input type="text" name="first-Name" id="first-name" required />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" name="lastName" id="last-name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input value="(+234) " type="tel" name="phone" id="phone" maxlength="15"required/>
+                </div>
+
+                <div class="form-group">
+                  <label for="gender">Gender</label>
+                  <select name="gender" id="gender">
+                      <option value="male">Male</option>
+                      <option value="female" selected>Female</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="State/Province">State/Province</label>
+                    <input type="text" name="State/Province" id="State/Province" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" required/>
+                </div>
+
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" required/>
+                </div>
+
+                <div class="form-group">
+                  <label for="password2">Confirm Password</label>
+                  <input type="password" name="password2" id="password2" required />
+                </div>
+
+                <button type="submit">REGISTER</button>
+                <p class="bottom-text">
+                  Already registered,Login Here</a>
+                </p>
+                <p><a href="login.html" class="btn"> Login Here</a></p>
+              </form>
+            </div>
+          </div>
+    </main>
+</body>
+</html>
